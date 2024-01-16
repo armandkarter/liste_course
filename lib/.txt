@@ -1,0 +1,115 @@
+Conception de l'Architecture :
+
+Divisez votre application en différents écrans (pages) :
+Accueil/Liste des articles.
+Ajout/Modification d'un article.
+Paramètres pour trier la liste.
+Créez des modèles pour représenter les données, par exemple, un modèle Article.
+Implémentation des Fonctionnalités :
+
+Ajout d'Articles :
+Créez un formulaire pour ajouter des articles avec des champs pour le nom, la catégorie et la quantité.
+Stockez les articles dans une liste.
+Suppression et Modification d'Articles :
+Permettez la suppression d'un article en faisant glisser l'élément de la liste.
+Implémentez la modification d'un article en accédant à un écran d'édition.
+Cocher les Articles :
+Ajoutez la possibilité de cocher/décocher les articles.
+Trier les Articles :
+Ajoutez des boutons de tri pour trier la liste par nom ou par catégorie.
+Sauvegarde de la Liste :
+Utilisez un système de stockage local (par exemple, le package shared_preferences pour Flutter) pour sauvegarder la liste même lorsque l'application est fermée.
+Qualité du Code et Interface :
+
+Utilisez une architecture propre et modulaire (par exemple, MVC, MVVM).
+Écrivez des tests pour les fonctionnalités clés de votre application.
+Appliquez des bonnes pratiques de développement, telles que la gestion des états, la gestion des erreurs, etc.
+Assurez-vous que l'interface utilisateur est conviviale et réactive.
+Documentation et Rapport :
+
+Documentez le code à l'aide de commentaires lorsque cela est nécessaire.
+Rédigez un rapport détaillant :
+L'architecture de votre application.
+Les choix techniques (packages utilisés, architecture, etc.).
+Les améliorations possibles.
+Démo Vidéo :
+
+Enregistrez une démo vidéo présentant les fonctionnalités de votre application.
+Hébergez la vidéo sur YouTube.
+GitHub :
+
+Hébergez votre code sur GitHub et incluez le lien dans vos livrables.
+Fichier Texte :
+
+Créez un fichier texte contenant les liens vers votre GitHub et la vidéo YouTube.
+Archive ZIP :
+
+Compilez tous les livrables (rapport, fichier texte, code source) dans une archive ZIP nommée selon les conventions spécifiées.
+Assurez-vous de consulter la documentation officielle de Flutter et les packages disponibles pour vous aider dans le développement de votre application. Cela vous aidera à suivre les meilleures pratiques et à tirer parti des fonctionnalités du framework.
+
+************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+STRUCTURE DU PROJET
+
+lib/
+|-- main.dart
+|-- models/
+|   |-- article.dart
+|-- screens/
+|   |-- home_screen.dart
+|   |-- add_edit_screen.dart
+|   |-- settings_screen.dart
+|-- widgets/
+|   |-- article_tile.dart
+|-- services/
+|   |-- storage_service.dart
+|-- utils/
+|   |-- sorting.dart
+
+
+****************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+1. Ajout d'Articles (Add/Modify Screen) :
+Créez une nouvelle page dans le dossier screens appelée add_edit_screen.dart.
+Implémentez la logique pour ajouter et modifier des articles sur cette page.
+Utilisez le modèle Article que vous avez défini dans le dossier models.
+2. Suppression d'Articles :
+Mettez à jour home_screen.dart pour permettre la suppression d'articles.
+Vous pouvez utiliser un widget de glisser pour supprimer ou ajouter des boutons de suppression sur chaque élément de la liste.
+3. Cocher les Articles :
+Mettez à jour le modèle Article pour inclure l'information sur l'état d'achat.
+Mettez à jour home_screen.dart pour permettre le cocher/décocher des articles.
+4. Tri des Articles (Settings Screen) :
+Créez une nouvelle page dans le dossier screens appelée settings_screen.dart.
+Ajoutez des options de tri pour trier la liste par nom ou par catégorie.
+Utilisez le fichier sorting.dart dans le dossier utils pour implémenter la logique de tri.
+5. Sauvegarde de la Liste :
+Utilisez le service de stockage local que vous avez créé dans le dossier services pour sauvegarder la liste d'articles.
+Appelez les fonctions de sauvegarde au besoin, par exemple, lorsque vous ajoutez, modifiez ou supprimez un article.
+6. Démo Vidéo et GitHub :
+Ajoutez les fonctionnalités une par une et assurez-vous qu'elles fonctionnent comme prévu.
+Enregistrez une démo vidéo montrant les différentes fonctionnalités de votre application.
+Mettez à jour votre GitHub avec le code mis à jour.
+7. Rapport :
+Commencez à rédiger votre rapport en décrivant l'architecture de votre application, les choix techniques que vous avez faits (comme l'utilisation de certains packages), et les améliorations possibles.
+Ajoutez des captures d'écran de votre application en action.
+Continuez à itérer sur ces étapes jusqu'à ce que toutes les fonctionnalités soient implémentées. Assurez-vous également de tester votre application à fond pour vous assurer qu'elle fonctionne correctement. N'hésitez pas à demander de l'aide si vous rencontrez des problèmes spécifiques pendant le processus de développement.
+
+
+
+
+
+
+
+
+
